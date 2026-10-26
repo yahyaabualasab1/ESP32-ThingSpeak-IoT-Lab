@@ -1,31 +1,57 @@
-# ESP32 DHT22 ThingSpeak IoT Lab
+# ESP32 → ThingSpeak IoT Lab
 
-An ESP32 project that reads temperature and humidity from a DHT22 sensor and sends the readings to ThingSpeak every 20 seconds.
+## Student Information
 
-## Components and wiring
+- **Name:** Yahya Abu Alasab
+- **University ID:** 12217938
+- **University:** An-Najah National University
 
-| DHT22 pin | ESP32 pin |
-| --- | --- |
-| VCC | 3V3 |
+## Project Description
+
+This project uses an ESP32 and a DHT22 sensor simulated in Wokwi to measure temperature and humidity. The readings are sent to ThingSpeak via Wi-Fi every 20 seconds and displayed on public charts.
+
+The ESP32 connects to the `Wokwi-GUEST` Wi-Fi network and sends temperature to **Field 1 (°C)** and humidity to **Field 2 (%)**. The university ID is printed in the serial monitor log.
+
+## Project Links
+
+- **ThingSpeak Public URL:** [https://thingspeak.mathworks.com/channels/3551792](https://thingspeak.mathworks.com/channels/3551792)
+- **Wokwi Simulation:** [https://wokwi.com/projects/478964288849283073](https://wokwi.com/projects/478964288849283073)
+
+## Wiring Connections
+
+| DHT22 | ESP32 |
+| ----- | ----- |
+| VCC | 3.3V |
+| DATA | GPIO 15 |
 | GND | GND |
-| SDA (data) | GPIO 15 |
 
-The Wokwi circuit is included in `diagram.json`.
+The Wokwi schematic and wiring connections are included in [`diagram.json`](diagram.json).
 
-## Run the project
+## Project Files
 
-1. Open the [Wokwi simulation](https://wokwi.com/projects/478964288849283073), or import the included sketch, circuit, and library files into a Wokwi ESP32 project.
-2. Create a ThingSpeak channel with **Field 1** for temperature in degrees Celsius and **Field 2** for relative humidity in percent.
-3. In your working copy of `sketch.ino`, replace `YOUR_THINGSPEAK_WRITE_API_KEY` with the channel's Write API Key. Keep your key private and do not commit it.
-4. The simulation uses the `Wokwi-GUEST` Wi-Fi network with an empty password. For physical hardware, set your own Wi-Fi credentials and adjust `WiFi.begin(...)` if the network uses a different channel.
-5. Start the simulation and open the serial monitor at **115200 baud**. Readings are sent every **20 seconds**. A successful update returns HTTP 200 and a positive ThingSpeak entry ID.
+- [`sketch.ino`](sketch.ino): ESP32 source code.
+- [`diagram.json`](diagram.json): Wokwi circuit schematic.
+- [`libraries.txt`](libraries.txt): Wokwi library dependencies.
+- [`wokwi-project.txt`](wokwi-project.txt): Original Wokwi project link.
+- `screenshots/`: Circuit, serial monitor, and ThingSpeak screenshots.
 
-## Project files
+## Screenshots
 
-- `sketch.ino`: sensor readings, Wi-Fi connection, and ThingSpeak HTTP updates.
-- `diagram.json`: ESP32 and DHT22 circuit for Wokwi.
-- `libraries.txt`: Wokwi library configuration, including the library providing `DHTesp.h`.
-- `wokwi-project.txt`: original simulation link.
-- `screenshots/`: location for project screenshots.
+Screenshots still need to be added before submission.
 
-The published sketch uses a placeholder for the ThingSpeak Write API Key. Configure it locally before running.
+### Wokwi Circuit
+
+<!-- Add the actual screenshot as screenshots/wokwi-circuit.png, then uncomment the image below. -->
+<!-- ![Wokwi Circuit](screenshots/wokwi-circuit.png) -->
+
+### Serial Monitor
+
+<!-- Add the actual screenshot as screenshots/serial-monitor.png, then uncomment the image below. -->
+<!-- ![Serial Monitor](screenshots/serial-monitor.png) -->
+
+### ThingSpeak Temperature & Humidity Graphs
+
+<!-- Add the actual screenshot as screenshots/thingspeak-graphs.png, then uncomment the image below. -->
+<!-- ![ThingSpeak Temperature and Humidity Graphs](screenshots/thingspeak-graphs.png) -->
+
+The ThingSpeak screenshot should show the public channel page and both graphs with timestamps and updated readings.
