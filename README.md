@@ -37,21 +37,18 @@ The Wokwi schematic and wiring connections are included in [`diagram.json`](diag
 
 ## Screenshots
 
-Screenshots still need to be added before submission.
+The screenshots below show the Wokwi circuit, successful serial monitor updates, and the ThingSpeak public charts.
 
 ### Wokwi Circuit
 
-<!-- Add the actual screenshot as screenshots/wokwi-circuit.png, then uncomment the image below. -->
-<!-- ![Wokwi Circuit](screenshots/wokwi-circuit.png) -->
+![Wokwi Circuit](screenshots/wokwi-circuit.png)
 
 ### Serial Monitor
 
-<!-- Add the actual screenshot as screenshots/serial-monitor.png, then uncomment the image below. -->
-<!-- ![Serial Monitor](screenshots/serial-monitor.png) -->
+![Serial Monitor](screenshots/serial-monitor.png)
 
 ### ThingSpeak Temperature & Humidity Graphs
 
-<!-- Add the actual screenshot as screenshots/thingspeak-graphs.png, then uncomment the image below. -->
-<!-- ![ThingSpeak Temperature and Humidity Graphs](screenshots/thingspeak-graphs.png) -->
+![ThingSpeak Temperature and Humidity Graphs](screenshots/thingspeak-graphs.png)
 
-The ThingSpeak screenshot should show the public channel page and both graphs with timestamps and updated readings.
+The ThingSpeak screenshot shows the Public View tab with temperature and humidity readings plotted over time.

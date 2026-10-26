@@ -1,1 +1,0 @@
-Add actual screenshots after running the Wokwi simulation and opening your public ThingSpeak channel. Do not use placeholder screenshots for submission.
