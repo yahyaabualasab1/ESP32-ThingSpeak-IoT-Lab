@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Yahya Abualasab",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -47.7, "left": 244.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "dht1:VCC", "red", [ "v-38.4", "h254.59" ] ],
+    [ "esp:GND.1", "dht1:GND", "black", [ "h-52.61", "v96", "h355.2", "v-19.2" ] ],
+    [ "esp:15", "dht1:SDA", "green", [ "v0", "h168.04" ] ]
+  ],
+  "dependencies": {}
+}

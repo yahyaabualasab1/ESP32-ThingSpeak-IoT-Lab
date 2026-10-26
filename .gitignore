@@ -1,0 +1,19 @@
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+secrets.h
+
+# Editor and build output
+.vscode/
+.idea/
+build/
+.pio/
+*.bin
+*.elf
+*.hex
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
