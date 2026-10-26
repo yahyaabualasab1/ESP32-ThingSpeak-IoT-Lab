@@ -1,4 +1,3 @@
-
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <DHTesp.h>
@@ -12,7 +11,7 @@ const char* password = "";
 
 // ThingSpeak Configuration
 const char* server = "http://api.thingspeak.com/update";
-const char* apiKey = "YOUR_THINGSPEAK_WRITE_API_KEY";
+const char* apiKey="DJIZ056RHZG6S10U";
 
 // DHT22 Sensor
 #define DHT_PIN 15
